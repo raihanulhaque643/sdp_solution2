@@ -10,7 +10,10 @@ const myFunc = (input) => {
         for(let j=i+1; j < myStr.length; j++) {
             if(current.includes(myStr[j])) {
                 current.push(myStr[j])
+            } else {
+                break
             }
+            
         }
 
         if(current.length > longest.length) {
@@ -25,5 +28,9 @@ const myFunc = (input) => {
 }
 
 
-// myFunc('aanyyeeeddk')
-// myFunc('btyyrjp')  
+myFunc('aanyyeeeddk')
+myFunc('btyyrjp')  
+myFunc('aaaaddee')  
+myFunc('aaddeeffff')  
+
+myFunc('abacaeeekekeke')
